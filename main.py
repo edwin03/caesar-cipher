@@ -4,7 +4,6 @@ direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n").lower
 text = input("Type your message:\n").lower()
 shift = int(input("Type the shift number:\n"))
 
-
 def encrypt(original_text, shift_amount):
     encrypted_message = ""
     for char in original_text:
@@ -14,6 +13,5 @@ def encrypt(original_text, shift_amount):
             position -= 26
         encrypted_message +=alphabet[position]
     print(f"Encrypted message: {encrypted_message}")
-    print(len(alphabet))
 
 encrypt(text, shift)
